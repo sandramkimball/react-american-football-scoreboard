@@ -5,8 +5,17 @@ import BottomRow from "./BottomRow";
 
 function App() {
   //TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
+  // const Timer = () => {
+  //   const [seconds, setSeconds] = useState(60);
+  //   useEffect(()=> {
+  //     setSeconds(seconds => seconds - 1);
+  //       }, 1000);
+  // };
+  
   const [homeScore, setHomeScore] = useState(0);
   const [awayScore, setAwayScore] = useState(0);
+  
+
 
   return (
     <div className="container">
@@ -14,12 +23,11 @@ function App() {
         <div className="topRow">
           <div className="home">
             <h2 className="home__name">Chargers</h2>
-
-            {/* TODO STEP 3 - We need to change the hardcoded values in these divs to accept dynamic values from our state. */}
-
             <div className="home__score">{homeScore}</div>
           </div>
-          <div className="timer">0:60</div>
+
+          <div className="timer">15:00</div>
+
           <div className="away">
             <h2 className="away__name">Vikings</h2>
             <div className="away__score">{awayScore}</div>
@@ -39,34 +47,8 @@ function App() {
         </div>
       </section>
     </div>
+    
   );
-
-
-  // const Timer = () => {
-  //   const [seconds, setSeconds] = useState(60);
-  //   const [isActive, setIsActive] = useState(false);
-
-  //   useEffect(()=> {
-  //     let interval = null;
-  //     if (isActive) {
-  //       interval= setInterval(()=>{
-  //         setSeconds(seconds => seconds - 1);
-  //       }, 1000);
-  //       } else if(!isActivate && seconds !== 0){
-  //         clearInterval(interval);
-  //       }
-  //       return () => clearnInterval(interal);
-  //     }, [isActive, seconds]);
-
-  //     return (
-  //       <div className='timer'>
-  //         <div className='time'>
-  //             {seconds}
-  //         </div>
-  //       </div>
-  //     );
-  
-};
-
+}
 export default App;
-// export default Timer;
+// export class Timer;
