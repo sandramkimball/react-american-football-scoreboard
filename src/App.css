@@ -1,17 +1,18 @@
 :root {
   --black: #0d0d0d;
   --red: #ff2d2b;
+  background: url('https://images.unsplash.com/photo-1459865264687-595d652de67e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+  background-size: cover;
 }
 
 .scoreboard {
   width: 58%;
   margin: 10rem auto;
-  background-color: #0b5402;
+  background-color: rgba(49, 49, 49, 0.9);
   color: white;
   border-radius: 0.5rem;
   margin-top: 10rem;
   padding: 5rem;
-  border: 4px solid #aaaaaa;
 }
 
 .topRow {
@@ -34,11 +35,11 @@
 }
 
 .home {
-  background-color: #656565;
+  background-color: #002A5E;
 }
 
 .away {
-  background-color: #af750a;
+  background-color: #4F2683;
 }
 
 .home__name,
